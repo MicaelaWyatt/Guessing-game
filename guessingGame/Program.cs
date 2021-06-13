@@ -6,6 +6,15 @@ namespace guessingGame
     {
         static void Main(string[] args)
         {
+            guessingGame();
+            guessingGame();
+            guessingGame();
+            guessingGame();
+        }
+
+
+        static void guessingGame()
+        {
             int secretNumber = 42;
             Console.WriteLine("??Guess the secret number??");
             string usersGuess = Console.ReadLine();
