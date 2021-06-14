@@ -18,8 +18,15 @@ namespace guessingGame
             int secretNumber = 42;
             Console.WriteLine("??Guess the secret number??");
             string usersGuess = Console.ReadLine();
-            int Guess = Convert.ToInt32(usersGuess);
+            int listOfGuesses = Convert.ToInt32(usersGuess);
+            string[] guesses = { usersGuess };
+            foreach (string guess in guesses)
+            {
+                int numOfGuesses = guesses.Length;
+                Console.WriteLine($"Your guess({numOfGuesses})>");
+            };
             // Console.WriteLine(Convert.ToInt32(usersGuess));
+            int Guess = Convert.ToInt32(usersGuess);
             if (Guess == secretNumber)
             {
                 Console.WriteLine("Dang! Did you cheat?");
